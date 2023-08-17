@@ -10,3 +10,16 @@ class Solution {
         return ans;
     }
 }
+
+//Using Advanced for loop
+class Solution {
+    public int[] buildArray(int[] nums) {
+        int[] ans=new int[nums.length];
+        int i=0; 
+        for(int element:nums){  
+            ans[i]=nums[element];
+            i++;
+        }
+        return ans;
+    }
+}
