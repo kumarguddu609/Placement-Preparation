@@ -14,6 +14,7 @@ class Solution {
 
     static boolean even(int n){
         int digits=0;
+        //More optimised using (int)(Math.log10(num))+1  will give no. of digits in a number
         while(n>0){
             digits++;
             n/=10;
