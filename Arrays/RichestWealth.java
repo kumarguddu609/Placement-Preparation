@@ -16,3 +16,19 @@ class Solution {
         return (a>b)?a:b;
     }
 }
+//Using Advanced for loop
+class Solution {
+    public int maximumWealth(int[][] accounts) {
+        int maxWealth=Integer.MIN_VALUE;
+        for(int[] customersBanks : accounts){
+            int wealth=0;
+            for(int money: customersBanks)
+            wealth+=money;
+            maxWealth=max(maxWealth,wealth);
+        }
+        return maxWealth;
+    }
+    int max(int a, int b){
+        return (a>b)?a:b;
+    }
+}
