@@ -30,3 +30,17 @@ class Solution {
         return ans;
     }
 }
+
+//In Single loop
+class Solution {
+    public int[] getConcatenation(int[] nums) {
+        int[] ans=new int[2*nums.length];
+        int i=0;
+        for(int element:ans){
+           ans[i]=nums[i%nums.length];
+           i++;
+        }
+        
+        return ans;
+    }
+}
