@@ -23,3 +23,26 @@
         }
     }
 }
+//
+//
+class Solution {
+    public int reachNumber(int target) {
+        // Handle negative targets by converting them to positive
+        target = Math.abs(target);
+        
+        // Calculate the minimum 'n' such that n * (n + 1) / 2 >= target
+        int n = (int) Math.ceil((-1.0 + Math.sqrt(1 + 8.0 * target)) / 2.0);
+        int sum = n * (n + 1) / 2;
+        
+        
+        if (sum == target) {
+            return n;
+        }
+        
+        if ((sum - target) % 2 == 0) {
+            return n;
+        } else {
+            return n + (n % 2 == 0 ? 1 : 2);
+        }
+    }
+}
