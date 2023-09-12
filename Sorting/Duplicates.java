@@ -1,5 +1,5 @@
 //#287
-//
+//https://leetcode.com/problems/find-the-duplicate-number/
 //
 //
 class Solution {
