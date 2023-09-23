@@ -9,5 +9,6 @@ class Solution {
             str.append((c == '.')? "[.]" : c );
         }
         return str.toString();
+        //more
     }
 }
